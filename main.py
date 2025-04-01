@@ -118,7 +118,10 @@ def chat_session(fileNo):
         chat_session = client.chats.create(model="gemini-2.0-flash")
         chat_session.send_message(context)
         prompt = ""
+        previous_response = Markdown(context)
+        console.print(previous_response)
         while(prompt != "exit"):
+
             console.print("[bold #BB86FC]You:[/bold #BB86FC] ", end="")
             prompt = input()
             if(prompt == "exit"):
