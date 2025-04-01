@@ -22,6 +22,8 @@ def write_file(filename,content):
         file.write(content+"\n")
 
 def file_list():
+    if not os.path.exists("context"):
+        os.makedirs("context")
     return os.listdir("context")
 
 def extract_title_from_file(filename):
