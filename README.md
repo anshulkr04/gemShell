@@ -1,5 +1,5 @@
 # gemSHELL
-gemSHELL is a terminal-based interface for interacting with Google's Gemini 2.0 AI model directly from your command line.
+gemShell is a terminal-based interface for interacting with Google's Gemini 2.0 AI model directly from your command line.
 
 ## Installation
 
