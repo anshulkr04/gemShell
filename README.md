@@ -5,8 +5,8 @@ gemShell is a terminal-based interface for interacting with Google's Gemini 2.0 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/anshulkr/gpter.git
-    cd gpter
+    git clone https://github.com/anshulkr/gemShell.git
+    cd gemShell
     ```
 
 2. Create a virtual environment and install dependencies:
