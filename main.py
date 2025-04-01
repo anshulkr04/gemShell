@@ -69,6 +69,8 @@ def chat_session(fileNo):
     console = Console()
 
     if (fileNo==0):
+        # Clear the terminal screen before starting a new chat
+        os.system('cls' if os.name == 'nt' else 'clear')
         console.print("[bold #efd3d7]Starting a new chat session.[/bold #efd3d7]")
         console.print("[bold #8e9aaf]=========================[/bold #8e9aaf]")
         console.print("[bold #dee2ff]You can ask me anything.[/bold #dee2ff]")
@@ -118,6 +120,7 @@ def chat_session(fileNo):
         chat_session = client.chats.create(model="gemini-2.0-flash")
         chat_session.send_message(context)
         prompt = ""
+        os.system('cls' if os.name == 'nt' else 'clear')
         previous_response = Markdown(context)
         console.print(previous_response)
         while(prompt != "exit"):
